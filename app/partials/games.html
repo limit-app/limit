@@ -8,7 +8,7 @@
     </form>
 
   <div ng-show="waitingGames.length >= 0" class="game-list">
-    <h2 class="waiting">Games Waiting for a More Players</h2>
+    <h2 class="waiting">Games Waiting for More Players:</h2>
 
     <div ng-repeat="game in waitingGames">
       <button class="newbtn" ng-disabled="usernameNotEntered" ng-click="joinGame(game)">Play {{ game.player1 }}</button>
